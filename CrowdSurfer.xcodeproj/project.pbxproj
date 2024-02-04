@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FB7BDD62B6FD5C10059EE7D /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2FB7BDD52B6FD5C10059EE7D /* PythonKit */; };
+		2FB7BDD82B6FD8EF0059EE7D /* output_video.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2FB7BDD72B6FD8EF0059EE7D /* output_video.MOV */; };
 		2FBCAA1E2B6EFE8A00CD819D /* CrowdSurferApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBCAA1D2B6EFE8A00CD819D /* CrowdSurferApp.swift */; };
 		2FBCAA202B6EFE8A00CD819D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBCAA1F2B6EFE8A00CD819D /* ContentView.swift */; };
 		2FBCAA222B6EFE8C00CD819D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FBCAA212B6EFE8C00CD819D /* Assets.xcassets */; };
@@ -34,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2FB7BDD72B6FD8EF0059EE7D /* output_video.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = output_video.MOV; sourceTree = "<group>"; };
 		2FBCAA1A2B6EFE8A00CD819D /* CrowdSurfer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrowdSurfer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FBCAA1D2B6EFE8A00CD819D /* CrowdSurferApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrowdSurferApp.swift; sourceTree = "<group>"; };
 		2FBCAA1F2B6EFE8A00CD819D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FB7BDD62B6FD5C10059EE7D /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +98,7 @@
 		2FBCAA1C2B6EFE8A00CD819D /* CrowdSurfer */ = {
 			isa = PBXGroup;
 			children = (
+				2FB7BDD72B6FD8EF0059EE7D /* output_video.MOV */,
 				2FBCAA1D2B6EFE8A00CD819D /* CrowdSurferApp.swift */,
 				2FBCAA1F2B6EFE8A00CD819D /* ContentView.swift */,
 				2FBCAA212B6EFE8C00CD819D /* Assets.xcassets */,
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = CrowdSurfer;
+			packageProductDependencies = (
+				2FB7BDD52B6FD5C10059EE7D /* PythonKit */,
+			);
 			productName = CrowdSurfer;
 			productReference = 2FBCAA1A2B6EFE8A00CD819D /* CrowdSurfer.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 2FBCAA112B6EFE8A00CD819D;
+			packageReferences = (
+				2FB7BDD42B6FD5C10059EE7D /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = 2FBCAA1B2B6EFE8A00CD819D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FBCAA252B6EFE8C00CD819D /* Preview Assets.xcassets in Resources */,
+				2FB7BDD82B6FD8EF0059EE7D /* output_video.MOV in Resources */,
 				2FBCAA222B6EFE8C00CD819D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -582,6 +594,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2FB7BDD42B6FD5C10059EE7D /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pvieito/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2FB7BDD52B6FD5C10059EE7D /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2FB7BDD42B6FD5C10059EE7D /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2FBCAA122B6EFE8A00CD819D /* Project object */;
 }
